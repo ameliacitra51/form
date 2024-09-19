@@ -75,7 +75,8 @@ const CreatePage = () => {
     }
   }
   return (
-    <div>
+    <div  className='bg-blue-400 flex justify-center items-center min-h-screen'>
+      <div className='bg-blue-300 p-6 rounded-lg shadow-lg'>
       <h2 className='text-2xl font-bold mb-4 text-center'>About</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -123,6 +124,7 @@ const CreatePage = () => {
         <button type="submit" className='w-full py-2 bg-blue-400 rounded-md'>Submit</button>
       </form>
       {message && <p className="text-center text-red-500">{message}</p>}
+      </div>
     </div>
   )
 }
